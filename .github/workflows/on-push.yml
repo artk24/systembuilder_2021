@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  test:
+    name: Testing stage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running script on python
+        run: |
+          ls
+          pwd
